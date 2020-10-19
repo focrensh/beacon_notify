@@ -1,0 +1,7 @@
+version: 1
+asset:
+  image_url_mask: https://raw.githubusercontent.com/focrensh/beacon_notify/master/images/beaconw.jpg
+
+urls:
+  # - jsons://webhook....
+  - msteams://tkn1/tkn2/tkn3/?template=teams_template.json

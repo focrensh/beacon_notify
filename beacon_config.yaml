@@ -1,0 +1,10 @@
+apps:
+  - "Bacon"
+  - "Mobile_App"
+checkInterval: 15 #seconds
+repeatMessage: 60 # minutes
+alert_states:
+  - "Critical"
+  - "Warning"
+clear_states:
+  - "Healthy"

@@ -1,0 +1,30 @@
+{
+    "@type": "MessageCard",
+    "@context": "https://schema.org/extensions",
+    "summary": "{{app_desc}}",
+    "themeColor": "{{app_color}}",
+    "sections": [
+      {
+        "activityImage": "{{app_image_url}}",
+        "activityTitle": "F5 Beacon Notification"
+      },
+      {
+          "title": "",
+          "facts": [
+              {"name": "Application: ", "value": "{{ app_title }}"},
+              {"name":"Reason: ","value":"{{app_body}}"}]
+      }
+    ],
+   "potentialAction": [{
+  
+          "@type": "ActionCard",
+          "name": "Link",
+          "actions": [{
+              "@type": "OpenUri",
+              "name": "Go to F5 Beacon",
+              "targets": [
+                {"os":"default","uri": "https://portal.cloudservices.f5.com/beacon/application-landscape/list-view/app-create-edit/app-map/{{ app_title }}"}
+              ]
+          }]
+   }]
+  }
