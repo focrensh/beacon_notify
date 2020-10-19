@@ -1,7 +1,7 @@
 # F5 Beacon Notification
 This is an example of using the results of a F5 Beacon API call to general alerts and notifications. The repo builds a docker container that can be run to handle the polling and sending of notifications. It utilizes [Apprise](https://github.com/caronc/apprise) for sending the notifications. This allows you to update the configuration to send the alerts to any integrations supposed by Apprise.
 
-![Teams output](./images/teams_example.png | width=300)
+<img src="https://raw.githubusercontent.com/focrensh/beacon_notify/master/images/teams_example.png" width="600">
 
 ## Workflow
 * The container will poll the F5 Beacon API on an interval set in the `beacon_config.yaml` file.
